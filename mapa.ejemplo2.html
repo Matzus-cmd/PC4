@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d6639ca8f2835b334f35fd368ae0ae1a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d6639ca8f2835b334f35fd368ae0ae1a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d6639ca8f2835b334f35fd368ae0ae1a = L.map(
+                "map_d6639ca8f2835b334f35fd368ae0ae1a",
+                {
+                    center: [36.46277982039607, -52.88464624364747],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 3,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_015701c67217acd8985044054b2e9edc = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_015701c67217acd8985044054b2e9edc.addTo(map_d6639ca8f2835b334f35fd368ae0ae1a);
+        
+    
+            var marker_1e3331311b86a1a3178f2d2006b669e6 = L.marker(
+                [51.65776941757177, -0.269772153157985],
+                {
+}
+            ).addTo(map_d6639ca8f2835b334f35fd368ae0ae1a);
+        
+    
+            var icon_35c9f147ed7829d2f1ff422d68748a22 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9588131ff9c9931cf66a1fa21d53c4e7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_510b49e26a40db80f0f568da411d09c9 = $(`<div id="html_510b49e26a40db80f0f568da411d09c9" style="width: 100.0%; height: 100.0%;">         <b>Película:</b> El resplandor<br>         <b>Director:</b> Stanley Kubrick<br>         <b>Año:</b> 1972<br>         <b>Género:</b> Terror psicológico<br>         <b>País:</b> Reino Unido<br>         <b>Productora:</b> Warner Bros. Pictures<br>         <b>Coordenadas:</b> 51.65776941757177, -0.269772153157985     </div>`)[0];
+                popup_9588131ff9c9931cf66a1fa21d53c4e7.setContent(html_510b49e26a40db80f0f568da411d09c9);
+            
+        
+
+        marker_1e3331311b86a1a3178f2d2006b669e6.bindPopup(popup_9588131ff9c9931cf66a1fa21d53c4e7)
+        ;
+
+        
+    
+    
+                marker_1e3331311b86a1a3178f2d2006b669e6.setIcon(icon_35c9f147ed7829d2f1ff422d68748a22);
+            
+    
+            var marker_63d6a3d28823c0381243a3b9104ce71c = L.marker(
+                [40.71020673888068, -74.01940835864723],
+                {
+}
+            ).addTo(map_d6639ca8f2835b334f35fd368ae0ae1a);
+        
+    
+            var icon_034a6d4d1609f5a3e624c66f4b065826 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4dc270b97b5ec5490e5358772fef93d5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8ddf8650d18c41a935d8fc43cf9e22e5 = $(`<div id="html_8ddf8650d18c41a935d8fc43cf9e22e5" style="width: 100.0%; height: 100.0%;">         <b>Película:</b> El Padrino<br>         <b>Director:</b> Francis Ford Coppola<br>         <b>Año:</b> 1980<br>         <b>Género:</b> Drama<br>         <b>País:</b> Estados Unidos<br>         <b>Productora:</b> Paramount Pictures<br>         <b>Coordenadas:</b> 40.71020673888068, -74.01940835864723     </div>`)[0];
+                popup_4dc270b97b5ec5490e5358772fef93d5.setContent(html_8ddf8650d18c41a935d8fc43cf9e22e5);
+            
+        
+
+        marker_63d6a3d28823c0381243a3b9104ce71c.bindPopup(popup_4dc270b97b5ec5490e5358772fef93d5)
+        ;
+
+        
+    
+    
+                marker_63d6a3d28823c0381243a3b9104ce71c.setIcon(icon_034a6d4d1609f5a3e624c66f4b065826);
+            
+    
+            var marker_745e5d0817b678d242c031e0c6e681c3 = L.marker(
+                [-0.8755003543767299, 36.317317320597816],
+                {
+}
+            ).addTo(map_d6639ca8f2835b334f35fd368ae0ae1a);
+        
+    
+            var icon_9263e57a406c1841c030a55a1b1a0e0e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3cdc2cbeae3bfb76c2b8330fa2833c75 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_91cfb94240b1ff572b0d86f1988604c8 = $(`<div id="html_91cfb94240b1ff572b0d86f1988604c8" style="width: 100.0%; height: 100.0%;">         <b>Película:</b> El Rey León<br>         <b>Director:</b> Rob Minkoff<br>         <b>Año:</b> 1994<br>         <b>Género:</b> Musical<br>         <b>País:</b> Estados Unidos<br>         <b>Productora:</b> Walt Disney Pictures<br>         <b>Coordenadas:</b> -0.8755003543767299, 36.317317320597816     </div>`)[0];
+                popup_3cdc2cbeae3bfb76c2b8330fa2833c75.setContent(html_91cfb94240b1ff572b0d86f1988604c8);
+            
+        
+
+        marker_745e5d0817b678d242c031e0c6e681c3.bindPopup(popup_3cdc2cbeae3bfb76c2b8330fa2833c75)
+        ;
+
+        
+    
+    
+                marker_745e5d0817b678d242c031e0c6e681c3.setIcon(icon_9263e57a406c1841c030a55a1b1a0e0e);
+            
+    
+            var marker_84dd1b932c59494775a0b3fbd2633da6 = L.marker(
+                [34.23608961808003, -111.40367464963657],
+                {
+}
+            ).addTo(map_d6639ca8f2835b334f35fd368ae0ae1a);
+        
+    
+            var icon_28c786603f8b9e9865e9644f0bba2edb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8a4e170e58ad61aa3190e3cb7c5c144d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9290041ad061f4903fc867f390df323f = $(`<div id="html_9290041ad061f4903fc867f390df323f" style="width: 100.0%; height: 100.0%;">         <b>Película:</b> Cars<br>         <b>Director:</b> John Lasseter<br>         <b>Año:</b> 2006<br>         <b>Género:</b> Comedia<br>         <b>País:</b> Estados Unidos<br>         <b>Productora:</b> Walt Disney Pictures<br>         <b>Coordenadas:</b> 34.23608961808003, -111.40367464963657     </div>`)[0];
+                popup_8a4e170e58ad61aa3190e3cb7c5c144d.setContent(html_9290041ad061f4903fc867f390df323f);
+            
+        
+
+        marker_84dd1b932c59494775a0b3fbd2633da6.bindPopup(popup_8a4e170e58ad61aa3190e3cb7c5c144d)
+        ;
+
+        
+    
+    
+                marker_84dd1b932c59494775a0b3fbd2633da6.setIcon(icon_28c786603f8b9e9865e9644f0bba2edb);
+            
+    
+            var marker_41744d94c34ef9076fbc935856e32d09 = L.marker(
+                [56.5853336818246, -115.04769337739339],
+                {
+}
+            ).addTo(map_d6639ca8f2835b334f35fd368ae0ae1a);
+        
+    
+            var icon_136b16a3776eeeb9f45afb494dd075e6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_de2f23160bc7a9b0b5b61c7c6d55b9b1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9f86515d589fff462e56b6840009ca0c = $(`<div id="html_9f86515d589fff462e56b6840009ca0c" style="width: 100.0%; height: 100.0%;">         <b>Película:</b> Interestellar<br>         <b>Director:</b> Christopher Nolan<br>         <b>Año:</b> 2014<br>         <b>Género:</b> Ciencia-ficción<br>         <b>País:</b> Estados Unidos<br>         <b>Productora:</b> Walt Disney Pictures<br>         <b>Coordenadas:</b> 56.5853336818246, -115.04769337739339     </div>`)[0];
+                popup_de2f23160bc7a9b0b5b61c7c6d55b9b1.setContent(html_9f86515d589fff462e56b6840009ca0c);
+            
+        
+
+        marker_41744d94c34ef9076fbc935856e32d09.bindPopup(popup_de2f23160bc7a9b0b5b61c7c6d55b9b1)
+        ;
+
+        
+    
+    
+                marker_41744d94c34ef9076fbc935856e32d09.setIcon(icon_136b16a3776eeeb9f45afb494dd075e6);
+            
+</script>
+</html>
