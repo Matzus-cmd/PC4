@@ -202,19 +202,19 @@ else:
 
     # Mostramos el gráfico seleccionado
     if grafico_seleccionado == 'Gráfico del Barcelona FC':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>Se hizo un filtrado de datos tanto de los goles recibidos como marcados en dos modalidades (local y visitante). De esta manera, filtro todos los datos referentes al club Barcelona y mostralos de forma tabulada. Ya con la herramienta Matplotlib puedo pasar los datos al gráfico (histograma) para su visualización.</div>", unsafe_allow_html=True)
         st.image("grafico.ejemplo1.png", caption='Gráfico del Barcelona FC', width=500)
         pass
     elif grafico_seleccionado == 'Promedio de tarjetas rojas recibidas por cada equipo como equipo local (hometeam)':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>Se importa un archivo que contiene datos futbolísticos de varios equipos, los cuales se dividen por sus nombres (Real Madrid, Barcelona, Betis, etc). Como nos centramos en las tarejtas rojas, lo seleccionamos y desarrollamos en Matplotlib.</div>", unsafe_allow_html=True)
         st.image("grafico.ejemplo2.png", caption='Gráfico promedio tarjetas rojas', width=500)
         pass
     elif grafico_seleccionado == 'Resultados de partidos del Real Madrid como equipo local':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>En la herramienta importada Matplotlib, creamos las secciones (Ganados, empatados, perdidos) en una lista para cada sección del gráfico. Los porcentajes se asignan con la variable guardada que contiene los resultados como local.</div>", unsafe_allow_html=True)
         st.image("grafico.ejemplo3.png", caption='Pie chart de los partidos del Real Madrid', width=500)
         pass
     elif grafico_seleccionado == 'Mis películas favoritas':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu mapa</div>", unsafe_allow_html=True)
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>Primero se creó un diccionario con mis cinco películas favoritas, incluyendo datos como la ubicación de producción, director, año, género, país y productora. Para el desarrollo del mapa, se importa la herramienta Folium y se detallan los pop-ups con su información de la película.</div>", unsafe_allow_html=True)
         # Si "mapa_cusco.html" es un archivo HTML (no una imagen), debes mostrarlo con st.components.v1.html
         import streamlit.components.v1 as components
         with open("mapa.ejemplo2.html", "r", encoding="utf-8") as f:
@@ -250,4 +250,5 @@ else:
 
         # Mostrar el mapa en Streamlit
         #st_folium(mapa_cusco, width=700, height=500)
+
     
